@@ -1,0 +1,12 @@
+image:
+  file: .gitpod.Dockerfile
+tasks:
+  - name: tailscaled
+    command: sudo tailscaled
+  - name: androidstudio
+    command: $HOME/android-studio/bin/studio.sh
+  - name: tailscale
+    command: sudo tailscale up --hostname gitpod-...
+ports:
+  - port: 6080
+    onOpen: open-preview

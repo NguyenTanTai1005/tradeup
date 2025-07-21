@@ -1,0 +1,15 @@
+{
+  "name": "Android Dev Container",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "extensions": [
+    "vscjava.vscode-java-pack",
+    "ms-androidtools.vscode-android"
+  ],
+  "forwardPorts": [8080, 3000],
+  "remoteUser": "vscode"
+}
